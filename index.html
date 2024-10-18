@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Santiago Security by Nathan Santiago</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background: #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        .main-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 2rem;
+            text-align: left;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container img {
+            max-width: 100%; /* Ensures image stays within container */
+            width: 200px; /* Sets a fixed width for the image */
+            height: auto;
+            border-radius: 10px;
+            margin-right: 2rem;
+            object-fit: cover;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            flex: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin-top: 2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6b6b;
+        }
+
+        .button-container {
+            text-align: center; /* Centers the button */
+            margin: 2rem auto; /* Space above and below the button */
+            padding-bottom: 2rem; /* Additional padding below the button */
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin-bottom: 0;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .main-section {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+            }
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img {
+                margin-bottom: 1rem;
+                width: 150px; /* Smaller image on mobile */
+            }
+
+            .container p {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Nathan Santiago</h1>
+        <p>IT Consultant | Cybersecurity Analyst | Network Engineer</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <!-- Image and Text Section -->
+            <img src="C:\Santaigo Security\Website SS\Images\headshot.jpg" alt="Nathan Santiago Headshot">
+            
+            <p>   
+                Hi there! I'm Nathan Santiago, a passionate IT professional with a focus on Cyber Strategy, Vulnerability Management, and Penetration Testing. 
+                This site showcases my portfolio, my experiences, and insights into the world of technology. Feel free to explore, 
+                and let's connect!
+            </p>
+        </div>
+    </section>
+
+    <!-- Button Section -->
+    <div class="button-container">
+        <a href="C:\Santaigo Security\Website SS\Files\Santiago_Resume.pdf" download="Nathan_Santiago_Resume.pdf" class="btn">View Resume</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Santiago Security. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
