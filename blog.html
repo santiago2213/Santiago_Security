@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Santiago | Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background: #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        .main-section {
+            padding: 4rem 2rem;
+            background: #fff;
+            margin: 2rem auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .blog-post {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .blog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .blog-header h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .blog-header span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .blog-header span.open {
+            transform: rotate(45deg);
+        }
+
+        .blog-content {
+            display: none;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin-bottom: 0;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Blog | Insights and Updates</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Blog Main Section -->
+    <section class="main-section">
+        <h2>Recent Blog Posts</h2>
+
+
+        <div class="blog-post">
+            <div class="blog-header" onclick="toggleBlog(this)">
+                <h3>Social Engineering: Tried and True</h3>
+                <span>+</span>
+            </div>
+            <div class="blog-content">
+                <p><strong>By Nathan Santiago</strong></p>
+        
+                <p>
+                    One of the oldest forms of offensive intelligence practices as well as the one that is the most taught defensively is the art of social engineering. As the logical preventative methods and general awareness of this threat have increased, so have the attack vectors used by malicious actors. In the 1970’s, Kevin Mitnick performed his first ‘hack’ against the Los Angeles Rapid Transit District (RTD) bus system by realizing that the only materials he needed to unlock free transportation were simply a specialty ticket punch and a pad of blank transfer scripts. Mitnick spent a lot of time riding the bus in his youth purchasing tickets for 25 cents and the return ticket or transfer ticket for an additional 10 cents. One day when he while riding the bus, he figured out how the punches were spaced and oriented on the transfer tickets to determine the date and direction of the route each ticket granted. Once he understood how the tickets were read, all that was needed were the physical materials to write his own passes and ride for free.
+                </p>
+        
+                <p>
+                    Kevin Mitnick performed his first social exploitation on the bus driver by convincing him that he simply wanted a punch to make “the interesting shapes that the punch made” on a cardboard school project, to which the bus driver obliged. Once he had the address of the store which sold those punches, he convinced the cashier at the checkout counter that the punch was a Christmas gift to his father who was also a bus driver. He now possessed the exact punch used by all of RTD and only needed a pad of blank transfer tickets to begin writing his own bus passes as a 12-year-old boy. Mitnick capitalized on the inherent laziness of people and took to his first dumpster dive at the bus depot where he found exactly what he was looking for, a pad of blank transfer tickets. 
+                </p>
+
+                <p>
+                    By deceiving two unrelated parties and using critical thinking to figure out how to find and mark blank transfer tickets, Kevin Mitnick gained unlimited access to the Los Angeles RTD bus system at 12 years old. While this was a simple attack that was not intentionally malicious, the ability of modern malicious threat actors to aggregate information and orchestrate a deceitful narrative has greatly increased since the 1970’s. Through strategic development and the prolificity of technology in our day-to-day lives, it is easy to find out the daily routine and social or professional connections of almost anyone without breaking a single computer or privacy law. However, once an attacker knows enough about a target to perform a directed social engineering attack, or ‘spear phish’, it can be difficult for even trained users to identify this as fraudulent and malicious activity.
+                </p>
+        
+                <!-- Add More Sections as Needed -->
+                
+                <h4>Modern Examples of Social Engineering</h4>
+                <p>
+                    Recently, over 100 Ukrainian government devices were compromised in a mass phishing campaign where threat actors posed as Ukrainian Secret Service personnel to target government employee accounts:
+                </p>
+
+                <p>
+                    “On Aug. 12, Ukraine's Computer Emergency Response Team (CERT-UA) discovered a mass distribution of emails carrying malicious software posing as the country's Security Service (SSU). The emails contain a link to download a file called "Document.zip" that, once clicked on, triggers a download of the MSI-file. This file launches a malware called ANONVNC that, when opened, allows attackers to gain unauthorized access to a victim's device. CERT-UA has identified more than 100 affected devices within central and local government bodies and urges everyone to be cautious and attentive. It recommends that users contact CERT-UA if suspicious of any activity” (DarkReading).
+                </p>
+
+                <p>
+                    This attack was the result of a sophisticated phishing campaign launched in July 2024 by an attacker group which is currently being tracked as ‘UAC-0198’ by the Computer Engineering Response Team of Ukraine (CERT-UA). They believe that this attack was a subsequent part of a recent series of attacks in which the threat actor groups are being tracked as ‘UAC-0102’ and ‘UAC-0057’, all of which aimed to compromise user accounts and install backdoors on government systems. In a public announcement, on the Ukranian state website, the CERT-UA team said the following:
+                </p>
+
+                <p>
+                    “It is appropriate to assume that the objects of interest of UAC-0057 could be both project office specialists and their "counterparts" from among the employees of the relevant local self-government bodies of Ukraine” (CERT-UA).
+                </p>
+
+                <p>
+                    In the attack tagged to UAC-0057, CERT-UA recorded a surge of documents being distributed which contained macros intended to launch the PICASSOLOADER malware which would act as a conduit to deliver a Cobalt Strike Beacon to a victim’s computer.
+                </p>
+
+                <p>
+                    “Cobalt Strike is a powerful tool that is used to replicate the tactics and techniques of long-term embedded attackers in red teaming engagements and adversary simulations. Known for its signature payload, Beacon, and its highly flexible C2 framework, Cobalt Strike is ideal for performing post-exploitation tasks and can be easily modified with custom scripts, adjustable attack kits, and user-created extensions” (Cobalt Strike).
+                </p>
+
+                <p>
+                    Unfortunately for the victims, the Cobalt Strike Beacon uses malleable C2 settings which allows attackers to manipulate communication patterns, making their traffic appear legitimate. By disguising GET and POST commands over HTTP/HTTPS or utilizing DNS Tunneling, the malware greatly reduces its visibility to detection systems. This technique complicates efforts to identify malicious activity, as the traffic blends in with regular network communications.
+                </p>
+
+                <p>
+                    UAC-0102 performed a series of phishing attacks which propagated malicious HTML attachments that would mimic the login page to the popular Ukranian email provider UKR.NET in an effort to steal user’s login credentials. According to CERT-UA, the attackers targeted the accounts of government employees in a similar fashion as the most recent attack by UAC-0198, although the final payloads varied from attack to attack. 
+                </p>
+
+                <p>
+                    The true identity of the attackers has not been confirmed, and CERT-UA has not released any official declarations, it is suspected that these attacks have been carried out by subsidiaries of the Russian state-sponsored group known as Sandworm. These groups targeted the Ukrainian email provider UKR.NET due to the fact that many public email providers do not employ the same email scanning services that corporate or government email providers use. Per the Bilateral Security Agreement Between the United States of America and Ukraine, CERT-UA has provided the file, network, and host indicators of compromise to the USA and other allies to add to malware detection and prevention services. 
+                </p>
+
+                <p>
+                    While Ukraine has ultimately been the primary target of these specific attacks, phishing-based data breaches happen around the world on a daily basis. Fortunately, most of the major email providers in United States use anti-phishing services to detect these fraudulent emails and scan attachments for malware signatures prior to allowing a user to download or access them, but threat actors have become increasingly stealthy and newly created malware will not have a recognizable signature until it has already caused a breach and been reported. 
+                </p>
+        
+                <h4>Defense Strategies</h4>
+                <p>
+                    Defense against these threats requires a multi-layered approach that combines technical defenses, user education, and organizational policies. Per the National Institute of Standards and Technology (NIST) guidance, organizations should perform the following to protect themselves against phishing-related data breaches (NIST):
+                </p>
+        
+                <h5>NIST Recommendations:</h5>
+                <ul>
+                    <li>Teach employees how to spot and report a phishing attempt.</li>
+                    <li>Recognize that phishing can occur via text messages, phone calls, or social media.</li>
+                    <li>Deploy and maintain antivirus software.</li>
+                    <li>Utilize email filters and security technologies.</li>
+                    <li>Enable multi-factor authentication (MFA).</li>
+                </ul>
+
+                <p>
+                    The first line of defense against social engineering and phishing attacks is user awareness. Despite being common in almost any modern organization, specialized and current cybersecurity training is essential for equipping individuals with the knowledge and skills needed to recognize and avoid phishing attempts. Employees should be trained to identify common phishing tactics, such as urgent requests, suspicious URLs, and unexpected attachments from seemingly familiar or authoritative sources.
+                </p>
+
+                <p>
+                    Should an employee feel as though they have fallen victim to a phishing attack, they should immediately report it to their direct manager and security administrator, so that the proper recovery actions can take place. If the security administrator is unavailable, the next best option is to disconnect the compromised device from any organizational networks in an attempt to isolate the system and prevent the propagation of malware.
+                </p>
+
+                <p>
+                    Phishing attacks are not solely limited to email, they can be delivered as links or pop-up ads in text messages, social media, or websites. These social engineering attacks can also be performed in person, over phone calls, or any other means of communication that are not computer-based as we observed in the story of Kevin Mitnick. During any communication with an unfamiliar or suspicious party, it is best to be overly cautious in your reaction than not.
+                </p>
+
+                <p>
+                    Cybersecurity education should highlight the importance of verifying the legitimacy of communications. If an employee receives and email that appears to be from a known contact but contains unusual language, images, or an unexpected attachment, they should not reply or interact with the original message in any way, rather, they should verify the authenticity of the message through alternative means such as a phone call, organizational messaging ping, or as a separate email to the sender. This simple verification step can prevent many impersonation-based phishing attempts from being successful.
+                </p>
+
+                <p>
+                    One of the most effective wats to protect against phishing attacks is to deploy and maintain up-to-date anti-virus software on your system. As the end goal of a phishing attack is to install malware on the victim’s computer, these technical controls add an extra layer of defense against any malicious links or attachments that a user may be tricked into opening. For an additional layer of security, installing host intrusion detection software (HIDs) or network intrusion detection software (NIDs) can alert you if there is a suspected intrusion so that the proper actions may be taken.
+                </p>
+
+                <p>
+                    Email filters can be another excellent form of protection against phishing attempts. Many email services offer configurable filters that can help prevent phishing attempts from reaching a user’s inbox, preventing any opportunity for the user to be tricked into clicking malicious links or attachments. Email security technologies such as Domain-based Message Authentication (DMARC), Sender Policy Framework (SPF), and DomainKeys Identified Mail (DKIM) can further enhance email security by verifying the origin of emails and rejecting messages that appear to be spoofed. 
+                </p>
+
+                <p>
+                    Additionally, utilizing services that provide a file scanning function can add a layer of protection by searching for discovered malware signatures. However, this is not a foolproof strategy as new forms of malware are created daily, and may not be included on the specified signature lists, so it is important that these services are kept up-to-date. The best option is to not click on any links or attachments unless you are absolutely sure of the origin and validity of the sender.
+                </p>
+
+                <p>
+                    Enabling multi-factor authentication (MFA) is another great way to secure accounts in the event that users fall for a fraudulent HTML site such as the ones used by UAC-0102. Should their credentials become compromised, the attacker will still be unable to access their account since a second form of verification such as a smartcard, hardware security key, third-party MFA application, or biometric scan will be required prior to access being granted for the service. NIST advises against use a phone call or SMS-based form of MFA as it is relatively easy for attackers to spoof your phone number with mobile providers in an attack known as a SIM-swap.
+                </p>
+
+                <p>
+                    Defending against social engineering and phishing attacks requires an in-depth layered approach that combines user education, technical defenses, and organizational policies. By creating a culture of cybersecurity awareness, implementing robust technical measures, and preparing for potential incidents, organizations can significantly reduce their attack surface to these increasingly sophisticated threats. In the constantly evolving landscape of cyber threats, a proactive and multi-layered defense strategy is the best way to protect sensitive information and maintain the integrity of critical systems.
+                </p>
+        
+                <p><strong>Sources:</strong></p>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=YmGwdoS706M" target="_blank">
+                            “Best of Kevin Mitnick: My First Social Engineering Hack” - Cybercrime Magazine
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.bleepingcomputer.com/news/security/hackers-posing-as-ukraines-security-service-infect-100-govt-pcs/" target="_blank">
+                            "Hackers Posing as Ukraine’s Security Service Infect 100 Govt PC" - BleepingComputer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.darkreading.com/vulnerabilities-threats/ukraine-cert-phishing-campaign-poses-as-nations-security-service" target="_blank">
+                            "Ukraine CERT: Phishing Campaign Poses as Nation’s Security Service" - Dark Reading
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.thehackernews.com/2024/08/ukraine-warns-of-new-phishing-campaign.html" target="_blank">
+                            "Ukraine Warns of New Phishing Campaign Targeting Government Officials" - The Hacker News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cert.gov.ua/article/6280159" target="_blank">
+                            "Cybersecurity Alert: Phishing Attacks Targeting Ukrainian Organizations" - CERT-UA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.cobaltstrike.com/product" target="_blank">
+                            "Product: Cobalt Strike" - Cobalt Strike
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.whitehouse.gov/briefing-room/statements-releases/2024/06/13/bilateral-security-agreement-between-the-united-states-of-america-and-ukraine/" target="_blank">
+                            "Bilateral Security Agreement Between the United States of America and Ukraine" - The White House
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://thehackernews.com/2023/07/picassoloader-malware-used-in-ongoing.html" target="_blank">
+                            "PicassoLoader Malware Used in Ongoing Cyberattacks" - The Hacker News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cip.gov.ua/en/news/khakeri-rozpovsyudzhuyut-shkidlive-programne-zabezpechennya-nibito-vid-imeni-sbu?utm_medium=email&_hsenc=p2ANqtz--A9eDW5BwyS75SsjUSyEhDtIN8BYom4W5vxDiutvBMFh8oKsb36HEGwKe3vgIVx0zXJl9fyiVPg1V7GumiEwBguij-ictks3wC3jArn5yhxcrih2g&_hsmi=92875558&utm_content=92875558&utm_source=hs_email" target="_blank">
+                            "Hackers Spread Malware Allegedly on Behalf of the SBU" - National Coordination Center for Cybersecurity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing" target="_blank">
+                            "Phishing" - National Institute of Standards and Technology
+                        </a>
+                    </li>
+                
+                    <!-- Add more sources as necessary -->
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Blog Post 1
+        <div class="blog-post">
+            <div class="blog-header" onclick="toggleBlog(this)">
+                <h3>Cybersecurity Trends 2024</h3>
+                <span>+</span>
+            </div>
+            <div class="blog-content">
+                <p>
+                    Discover the latest trends in cybersecurity, including the rise of AI-driven security measures, an increase in supply chain attacks, and more. These insights can help you stay ahead in protecting your organization's critical assets.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- Blog Post 2 
+        <div class="blog-post">
+            <div class="blog-header" onclick="toggleBlog(this)">
+                <h3>Best Practices for Vulnerability Management</h3>
+                <span>+</span>
+            </div>
+            <div class="blog-content">
+                <p>
+                    Effective vulnerability management is critical to safeguarding systems. Learn how to prioritize vulnerabilities, perform regular scans, and implement timely patches for optimal security.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- Blog Post 3 
+        <div class="blog-post">
+            <div class="blog-header" onclick="toggleBlog(this)">
+                <h3>Cloud Security Essentials</h3>
+                <span>+</span>
+            </div>
+            <div class="blog-content">
+                <p>
+                    As more businesses migrate to the cloud, securing data and applications becomes paramount. Explore best practices for ensuring your cloud environment is protected against emerging threats.
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nathan Santiago. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Expandable Blog Content -->
+    <script>
+        function toggleBlog(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('span');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+';
+                icon.classList.remove('open');
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-';
+                icon.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
